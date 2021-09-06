@@ -126,5 +126,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+
+# Tells django where to store the media files. We created this in Dockerfile
+MEDIA_ROOT = '/vol/web/media'
+# Where the static files get stored
+STATIC_ROOT = '/vol/web/static'
 
 AUTH_USER_MODEL = 'core.User'
